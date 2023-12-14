@@ -1,0 +1,12 @@
+@mixin gradientColor() {
+  background: $bgGradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+}
+
+@mixin displayACenter() {
+  display: flex;
+  align-items: center;
+}

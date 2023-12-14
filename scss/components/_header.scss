@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  background-color: $bgColor;
+
+  width: 100vw;
+
+  &__nav {
+    @include displayACenter();
+
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+
+  &--link {
+    font-size: $linkFS;
+    text-transform: uppercase;
+  }
+}

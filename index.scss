@@ -1,0 +1,34 @@
+@import "scss/vars";
+@import "scss/mixins";
+
+@import "scss/components";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+a {
+  color: $mainColor;
+  text-decoration: none;
+
+  transition: $linkTransition;
+}
+a:hover {
+  @include gradientColor();
+}
+a:active {
+  opacity: 0.8;
+}
+
+.wrapper {
+  padding: 0% $mobilePadding;
+
+  @media (min-width: 768px) {
+    padding: 0% $pcPadding;
+  }
+}
