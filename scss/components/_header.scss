@@ -1,8 +1,9 @@
 .header {
   position: fixed;
-  background-color: $bgColor;
+  z-index: 10000;
 
   width: 100vw;
+  background-color: $bgColor;
 
   &__nav {
     @include displayACenter();
