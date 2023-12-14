@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+  top: 0px;
   z-index: 10000;
 
   width: 100vw;
@@ -13,6 +14,7 @@
   }
 
   &--link {
+    font-family: $mainFont;
     font-size: $linkFS;
     text-transform: uppercase;
   }

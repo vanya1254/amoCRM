@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter;
 }
 
 a {
@@ -31,4 +30,12 @@ a:active {
   @media (min-width: 768px) {
     padding: 0% $pcPadding;
   }
+}
+
+.main {
+  margin-top: 55px;
+}
+
+.mark {
+  @include gradientColor();
 }
