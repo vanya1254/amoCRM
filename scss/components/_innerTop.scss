@@ -46,9 +46,6 @@
         width: 275px;
       }
     }
-
-    @media (min-width: 768px) {
-    }
   }
 
   &__footer {
@@ -66,6 +63,16 @@
 
       .mark {
         font-weight: $mainWeight + 200;
+
+        @media (min-width: 768px) {
+          letter-spacing: 0.9px;
+          text-transform: uppercase;
+        }
+      }
+
+      @media (min-width: 768px) {
+        width: 291px;
+        text-align: right;
       }
     }
 
@@ -97,6 +104,78 @@
           background: $bgGradient;
         }
       }
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .footer__pc__content {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 164px 135px;
+        row-gap: 30px;
+        column-gap: 30px;
+        max-width: 330px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 30px;
+        // justify-content: space-between;
+
+        &__li {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 6px;
+
+          list-style: none;
+          text-align: right;
+          color: $mainColor;
+
+          .li--header {
+            font-family: $mainFont;
+            font-size: 18px;
+            font-weight: $mainWeight;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+          }
+
+          .li--text {
+            color: #e4e5ea;
+            text-align: right;
+            font-family: $secondFont;
+            font-size: 16px;
+            font-weight: $mainWeight - 100;
+          }
+        }
+      }
+    }
+
+    .footer--btn {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+        margin-top: 21px;
+        margin-bottom: 10px;
+        padding: 21px 35px;
+
+        border: none;
+        background: #4077f3;
+
+        color: $mainColor;
+        font-family: $mainFont;
+        font-size: 16px;
+        font-weight: $mainWeight;
+      }
+    }
+
+    @media (min-width: 768px) {
+      gap: 40px;
+      align-items: end;
+      padding-top: 15px;
     }
   }
 
