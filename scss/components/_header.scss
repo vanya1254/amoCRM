@@ -33,28 +33,64 @@
 
       padding-bottom: 4px;
       padding-top: 11px;
+      margin-right: 27px;
     }
   }
 
   &__nav {
     @include displayACenter();
 
-    justify-content: space-between;
     padding: 20px 0px;
 
-    .contacts {
+    &__content {
+      @include displayACenter();
+
+      width: 100%;
+
+      @media (min-width: 768px) {
+        @include displayACenter();
+
+        justify-content: space-between;
+        width: calc(100% - 189px);
+        padding-top: 13px;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__main {
+      @include displayACenter();
+
+      width: 100%;
+      justify-content: space-between;
+
+      @media (min-width: 768px) {
+        @include displayACenter();
+
+        width: fit-content;
+        gap: 30px;
+      }
+    }
+
+    &__contacts {
       display: none;
 
       @media (min-width: 768px) {
         @include displayACenter();
 
-        margin-left: 107px;
         justify-content: end;
         gap: 30px;
         max-width: 445px;
 
+        .contact {
+          cursor: default;
+        }
+        .contact:hover {
+          background: none;
+          -webkit-text-fill-color: $mainColor;
+        }
+
         .header--link {
-          height: 35px;
+          line-height: 0;
         }
       }
     }
@@ -63,7 +99,6 @@
       align-items: start;
       justify-content: start;
       padding: 0;
-      gap: 30px;
     }
   }
 
@@ -73,10 +108,9 @@
     text-transform: uppercase;
 
     @media (min-width: 768px) {
-      padding-top: 15px;
-
       font-size: $linkFS + 4;
       font-weight: $mainWeight;
+      text-transform: none;
     }
   }
 

@@ -18,9 +18,21 @@
       font-weight: $mainWeight - 100;
 
       &--main {
+        @media (min-width: 768px) {
+          width: 362px;
+        }
       }
       &--second {
         font-weight: $mainWeight + 400;
+
+        @media (min-width: 768px) {
+          width: 275px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        font-size: 48px;
+        display: grid;
       }
     }
 
@@ -29,6 +41,13 @@
       font-family: $secondFont;
       font-size: 18px;
       font-weight: $mainWeight - 100;
+
+      @media (min-width: 768px) {
+        width: 275px;
+      }
+    }
+
+    @media (min-width: 768px) {
     }
   }
 
@@ -83,5 +102,7 @@
 
   @media (min-width: 768px) {
     padding-top: 209px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
