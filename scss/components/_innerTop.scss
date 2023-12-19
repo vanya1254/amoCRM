@@ -1,17 +1,10 @@
 .inner__top {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   gap: 45px;
 
-  padding-top: 40px !important;
-  padding-bottom: 59px !important;
-  width: 100vw;
-  background-color: $bgColor;
-
-  //   background: url("/img/noise.png"), lightgray 0% 0% / 100px 100px repeat;
-  //   mix-blend-mode: overlay;
+  padding-top: 40px;
+  padding-bottom: 59px;
 
   &__header {
     display: flex;
@@ -73,63 +66,22 @@
       &--li {
         position: relative;
         padding-left: 15px;
-      }
 
-      &--li::before {
-        position: absolute;
-        z-index: 10000;
-        left: 0px;
-        top: 7px;
+        &::before {
+          position: absolute;
+          left: 0px;
+          top: 7px;
 
-        content: "";
-        width: 10px;
-        height: 1px;
-        background: $bgGradient;
+          content: "";
+          width: 10px;
+          height: 1px;
+          background: $bgGradient;
+        }
       }
     }
   }
 
-  .purple-light {
-    position: absolute;
-    top: 30%;
-    right: -200px;
-
-    width: 259px;
-    height: 259px;
-    flex-shrink: 0;
-    border-radius: 259px;
-
-    opacity: 0.5;
-    background: #833ab4;
-    filter: blur(196px);
-  }
-  .red-light {
-    position: absolute;
-    bottom: -6px;
-    left: -20px;
-
-    width: 211px;
-    height: 210px;
-    flex-shrink: 0;
-    border-radius: 211px;
-
-    fill: #961a1a;
-    opacity: 0.5;
-    filter: blur(196px);
-  }
-
-  .yellow-light {
-    position: absolute;
-    bottom: -278px;
-    left: -42px;
-
-    width: 200px;
-    height: 200px;
-    flex-shrink: 0;
-    border-radius: 200px;
-
-    fill: #fcb045;
-    opacity: 0.4;
-    filter: blur(196px);
+  @media (min-width: 768px) {
+    padding-top: 209px;
   }
 }

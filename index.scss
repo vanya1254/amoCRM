@@ -34,8 +34,140 @@ a:active {
 
 .main {
   margin-top: 55px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .mark {
   @include gradientColor();
+}
+
+.pc {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.wrapper__top {
+  background-color: $bgColor;
+  overflow: hidden;
+  position: relative;
+
+  .purple-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    top: 30%;
+    right: -200px;
+
+    width: 259px;
+    height: 259px;
+    flex-shrink: 0;
+    border-radius: 259px;
+
+    opacity: 0.5;
+    background: #833ab4;
+    filter: blur(196px);
+
+    &--ball {
+      display: block;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+
+      background: radial-gradient(
+        82.3% 82.3% at 27.25% 26.5%,
+        rgba(236, 208, 255, 0.64) 0%,
+        rgba(161, 93, 207, 0.24) 59.67%,
+        rgba(118, 49, 164, 0.21) 78.59%,
+        rgba(86, 24, 128, 0.23) 100%
+      );
+      filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+      border-radius: 40px;
+    }
+  }
+  .red-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    position: absolute;
+    bottom: -6px;
+    left: -20px;
+
+    width: 211px;
+    height: 210px;
+    flex-shrink: 0;
+    border-radius: 211px;
+
+    fill: #961a1a;
+    opacity: 0.5;
+    filter: blur(196px);
+
+    &--ball {
+      align-self: center;
+      display: block;
+      margin: 0;
+      width: 43px;
+      height: 43px;
+      flex-shrink: 0;
+
+      background: radial-gradient(
+        82.3% 82.3% at 27.25% 26.5%,
+        rgba(255, 208, 208, 0.54) 0%,
+        rgba(212, 93, 93, 0.26) 59.67%,
+        rgba(167, 49, 49, 0.25) 78.59%,
+        rgba(130, 25, 25, 0.25) 100%
+      );
+      filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+      border-radius: 43px;
+    }
+  }
+
+  .yellow-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    bottom: -278px;
+    left: -42px;
+
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 200px;
+
+    fill: #fcb045;
+    opacity: 0.4;
+    filter: blur(196px);
+
+    &--ball {
+      align-self: center;
+      display: block;
+      margin: 0;
+      width: 25px;
+      height: 25px;
+      flex-shrink: 0;
+
+      background: radial-gradient(
+        105.65% 105.65% at 0% 11.96%,
+        rgba(255, 233, 203, 0.57) 0%,
+        rgba(184, 131, 18, 0.45) 100%
+      );
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 40px;
+    }
+  }
+}
+.wrapper__footer {
+  background-color: $bgColor;
+  padding-bottom: 56px;
 }

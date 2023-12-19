@@ -1,21 +1,90 @@
 .header {
   position: fixed;
   top: 0px;
-  z-index: 10000;
+  z-index: 1000000;
 
   width: 100vw;
   background-color: $bgColor;
+
+  &__logo {
+    display: none;
+
+    a {
+      width: fit-content;
+      height: fit-content;
+    }
+
+    .header--logo {
+    }
+
+    .header--caption {
+      color: #e4e5ea;
+      font-family: $secondFont;
+      font-size: 10px;
+      font-weight: $mainWeight - 200;
+
+      width: 162px;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      padding-bottom: 4px;
+      padding-top: 11px;
+    }
+  }
 
   &__nav {
     @include displayACenter();
 
     justify-content: space-between;
     padding: 20px 0px;
+
+    .contacts {
+      display: none;
+
+      @media (min-width: 768px) {
+        @include displayACenter();
+
+        margin-left: 107px;
+        justify-content: end;
+        gap: 30px;
+        max-width: 445px;
+
+        .header--link {
+          height: 35px;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      align-items: start;
+      justify-content: start;
+      padding: 0;
+      gap: 30px;
+    }
   }
 
   &--link {
     font-family: $mainFont;
     font-size: $linkFS;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      padding-top: 15px;
+
+      font-size: $linkFS + 4;
+      font-weight: $mainWeight;
+    }
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
   }
 }
