@@ -27,6 +27,7 @@
 
         @media (min-width: 768px) {
           width: 275px;
+          margin-top: -2px;
         }
       }
 
@@ -45,6 +46,10 @@
       @media (min-width: 768px) {
         width: 275px;
       }
+    }
+
+    @media (min-width: 768px) {
+      gap: 30px;
     }
   }
 
@@ -116,7 +121,7 @@
       @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 164px 135px;
-        row-gap: 30px;
+        row-gap: 33px;
         column-gap: 30px;
         max-width: 330px;
         // display: flex;
@@ -128,7 +133,7 @@
           display: flex;
           flex-direction: column;
           align-items: end;
-          gap: 6px;
+          gap: 7px;
 
           list-style: none;
           text-align: right;
@@ -175,12 +180,12 @@
     @media (min-width: 768px) {
       gap: 40px;
       align-items: end;
-      padding-top: 15px;
+      padding-top: 17px;
     }
   }
 
   @media (min-width: 768px) {
-    padding-top: 209px;
+    padding-top: 208px;
     flex-direction: row;
     justify-content: space-between;
   }

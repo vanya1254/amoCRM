@@ -170,4 +170,8 @@ a:active {
 .wrapper__footer {
   background-color: $bgColor;
   padding-bottom: 56px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 20px;
+  }
 }

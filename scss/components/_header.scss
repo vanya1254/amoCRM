@@ -33,7 +33,7 @@
 
       padding-bottom: 4px;
       padding-top: 11px;
-      margin-right: 27px;
+      margin-right: 32px;
     }
   }
 
@@ -52,7 +52,7 @@
 
         justify-content: space-between;
         width: calc(100% - 189px);
-        padding-top: 13px;
+        padding-top: 14px;
         flex-wrap: wrap;
       }
     }
@@ -83,6 +83,7 @@
 
         .contact {
           cursor: default;
+          margin-right: 16px;
         }
         .contact:hover {
           background: none;
@@ -116,7 +117,7 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    top: 65px;
+    top: 46px;
     width: 100%;
 
     background-color: rgba(0, 0, 0, 0);

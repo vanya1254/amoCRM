@@ -59,6 +59,10 @@
           fill: $secondColor;
         }
       }
+
+      @media (min-width: 768px) {
+        gap: 8px;
+      }
     }
     .grid-ul {
       display: grid;
@@ -69,7 +73,12 @@
       @media (min-width: 768px) {
         grid-template-columns: 144px 212px;
         column-gap: 52px;
+        row-gap: 9px;
       }
+    }
+
+    @media (min-width: 768px) {
+      gap: 19px;
     }
   }
 
@@ -129,6 +138,7 @@
   }
 
   @media (min-width: 768px) {
-    gap: 33px;
+    gap: 32px;
+    padding-top: 55px;
   }
 }
