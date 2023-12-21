@@ -27,7 +27,7 @@ a:active {
 .wrapper {
   padding: 0% $mobilePadding;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding: 0% $pcPadding;
   }
 }
@@ -35,7 +35,7 @@ a:active {
 .main {
   margin-top: 55px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     margin-top: 0;
   }
 }
@@ -47,7 +47,7 @@ a:active {
 .pc {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: inline-block;
   }
 }
@@ -171,7 +171,7 @@ a:active {
   background-color: $bgColor;
   padding-bottom: 56px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-bottom: 20px;
   }
 }

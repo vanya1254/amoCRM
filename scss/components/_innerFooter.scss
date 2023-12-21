@@ -9,13 +9,18 @@
 
     gap: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       // flex-flow: row wrap;
       justify-content: space-between;
 
       display: grid;
       grid-template-columns: 25.679228% 35.758106% 38.562664%;
       gap: 0;
+    }
+
+    @media (min-width: 769px) and (max-width: 1439px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
     }
   }
   &__article {
@@ -31,7 +36,7 @@
       letter-spacing: 0.6px;
       text-transform: uppercase;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         font-size: $linkFS + 2;
         letter-spacing: 0.7px;
       }
@@ -40,7 +45,7 @@
     .article__ul {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
       list-style: none;
 
       .article--li {
@@ -48,20 +53,22 @@
         font-size: $linkFS + 2;
         font-weight: $mainWeight - 100;
 
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           font-size: $linkFS + 4;
         }
       }
 
+      .article--li.phone {
+        font-size: 16px;
+        font-weight: $mainWeight;
+      }
+
       .medias {
-        margin-top: -3px;
+        display: flex;
+        gap: 10px;
         a:hover path {
           fill: $secondColor;
         }
-      }
-
-      @media (min-width: 768px) {
-        gap: 8px;
       }
     }
     .grid-ul {
@@ -70,20 +77,20 @@
       row-gap: 10px;
       column-gap: 25px;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         grid-template-columns: 144px 212px;
         column-gap: 52px;
         row-gap: 9px;
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       gap: 19px;
     }
   }
 
   &__article:last-child {
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       justify-self: end;
 
       .article--title {
@@ -132,12 +139,12 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       align-items: end;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     gap: 32px;
     padding-top: 55px;
   }

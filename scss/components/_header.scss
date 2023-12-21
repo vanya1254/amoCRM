@@ -26,7 +26,7 @@
       width: 162px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       display: flex;
       flex-direction: column;
       gap: 6px;
@@ -47,13 +47,14 @@
 
       width: 100%;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         @include displayACenter();
 
         justify-content: space-between;
         width: calc(100% - 189px);
         padding-top: 14px;
         flex-wrap: wrap;
+        gap: 10px;
       }
     }
 
@@ -63,18 +64,22 @@
       width: 100%;
       justify-content: space-between;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         @include displayACenter();
 
         width: fit-content;
         gap: 30px;
+      }
+
+      @media (min-width: 769px) and (max-width: 876px) {
+        flex-wrap: wrap;
       }
     }
 
     &__contacts {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         @include displayACenter();
 
         justify-content: end;
@@ -96,7 +101,7 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       align-items: start;
       justify-content: start;
       padding: 0;
@@ -108,14 +113,14 @@
     font-size: $linkFS;
     text-transform: uppercase;
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       font-size: $linkFS + 4;
       font-weight: $mainWeight;
       text-transform: none;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     position: absolute;
     top: 46px;
     width: 100%;

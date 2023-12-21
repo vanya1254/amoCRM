@@ -18,20 +18,20 @@
       font-weight: $mainWeight - 100;
 
       &--main {
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           width: 362px;
         }
       }
       &--second {
         font-weight: $mainWeight + 400;
 
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           width: 275px;
           margin-top: -2px;
         }
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         font-size: 48px;
         display: grid;
       }
@@ -43,12 +43,12 @@
       font-size: 18px;
       font-weight: $mainWeight - 100;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         width: 275px;
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       gap: 30px;
     }
   }
@@ -69,13 +69,13 @@
       .mark {
         font-weight: $mainWeight + 200;
 
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           letter-spacing: 0.9px;
           text-transform: uppercase;
         }
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         width: 291px;
         text-align: right;
       }
@@ -110,7 +110,7 @@
         }
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         display: none;
       }
     }
@@ -118,7 +118,7 @@
     .footer__pc__content {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         display: grid;
         grid-template-columns: 164px 135px;
         row-gap: 33px;
@@ -161,7 +161,7 @@
     .footer--btn {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         display: block;
         margin-top: 21px;
         margin-bottom: 10px;
@@ -177,16 +177,21 @@
       }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       gap: 40px;
       align-items: end;
       padding-top: 17px;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     padding-top: 208px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: 769px) and (max-width: 930px) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
