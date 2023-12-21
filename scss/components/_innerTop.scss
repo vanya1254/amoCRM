@@ -169,11 +169,20 @@
 
         border: none;
         background: #4077f3;
+        cursor: pointer;
+        transition: 0.1s ease-out;
 
         color: $mainColor;
         font-family: $mainFont;
         font-size: 16px;
         font-weight: $mainWeight;
+      }
+
+      &:hover {
+        background: #3069ee;
+      }
+      &:active {
+        opacity: 0.8;
       }
     }
 
@@ -193,5 +202,9 @@
   @media (min-width: 769px) and (max-width: 930px) {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @media (min-height: 981px) {
+    width: 100%;
   }
 }

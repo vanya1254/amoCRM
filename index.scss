@@ -166,6 +166,11 @@ a:active {
       border-radius: 40px;
     }
   }
+  @media (min-height: 981px) {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+  }
 }
 .wrapper__footer {
   background-color: $bgColor;
